@@ -380,17 +380,18 @@ module Dnsruby
   
   # http://www.iana.org/assignments/dns-sec-alg-numbers/
   class Algorithms < CodeMapper
-    RESERVED   = 0
-    RSAMD5     = 1
-    DH         = 2
-    DSA        = 3
-    ECC        = 4
-    RSASHA1    = 5
-    RSASHA256  = 8
-    RSASHA512  = 10
-    INDIRECT   = 252
-    PRIVATEDNS = 253
-    PRIVATEOID = 254
+    RESERVED        = 0
+    RSAMD5          = 1
+    DH              = 2
+    DSA             = 3
+    ECC             = 4
+    RSASHA1         = 5
+    RSASHA256       = 8
+    RSASHA512       = 10
+    ECDSAP256SHA256 = 13
+    INDIRECT        = 252
+    PRIVATEDNS      = 253
+    PRIVATEOID      = 254
     update()
     # Referred to as Algorithms.DSA_NSEC3_SHA1
     add_pair("DSA-NSEC3-SHA1", 6)
